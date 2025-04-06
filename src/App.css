@@ -346,16 +346,16 @@
       padding: 20px;
     }
   }
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .social-icon, .social-icon-l {
-      width: 35px;  /* Adjust the size on mobile if needed */
+      width: 35px; 
       height: 35px;
     }
   }
   
   @media (max-width: 480px) {
     .social-icon, .social-icon-l {
-      width: 30px;  /* Further reduce size for small mobile screens */
+      width: 30px;  
       height: 30px;
     }
-  }
+  } */
