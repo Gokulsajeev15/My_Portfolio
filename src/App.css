@@ -124,7 +124,7 @@
     max-width: 800px;
     margin: 0 auto;
   }
-  
+
   /* Resume Button Styles */
   .resume-button {
     background-color: #64b6ac;
@@ -173,7 +173,6 @@
   .resume-button:hover::before {
     left: 100%;
   }
-
   /* Resume Display Section */
   .resume-display {
     margin-top: 30px;
