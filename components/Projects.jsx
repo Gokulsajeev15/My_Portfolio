@@ -1,13 +1,15 @@
 import React from 'react';
 
 // Reusable ProjectCard Component
-function ProjectCard({ title, description, image }) {
+function ProjectCard({ title, description, image,link }) {
   return (
-    <div className="project-card">
-      <img src={image} alt={title} className="project-image" />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
+    <a className='project-card' href={link}>
+      <div>
+        <img src={image} alt={title} className="project-image" />
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </a>
   );
 }
 
@@ -16,9 +18,10 @@ function Projects() {
 
   const projectData = [
     {
-      title: 'E-Commerce Website',
-      description: 'A modern e-commerce platform built with React, featuring a responsive design, shopping cart functionality, and seamless payment integration.',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop',
+      title: 'Automated Survey Scheduler',
+      description: 'The Automated Survey Scheduler automates personalized survey invitations with AI-powered email content and seamless Gmail integration. It offers flexible scheduling, participant management, and bulk CSV uploads to optimize survey engagement.',
+      image: '/My_Portfolio/assets/Automated_scheduler.png',
+      link:'https://github.com/Gokulsajeev15/Automated-Survey_scheduler'
       
     },
     {
@@ -41,6 +44,7 @@ function Projects() {
               title={project.title}
               description={project.description}
               image={project.image}
+              link={project.link}
             />
           ))}
         </div>
