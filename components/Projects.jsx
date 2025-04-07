@@ -19,6 +19,7 @@ function Projects() {
       title: 'E-Commerce Website',
       description: 'A modern e-commerce platform built with React, featuring a responsive design, shopping cart functionality, and seamless payment integration.',
       image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop',
+      
     },
     {
       title: 'Task Manager',

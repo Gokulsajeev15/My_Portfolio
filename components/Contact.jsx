@@ -5,16 +5,9 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <h1>Contact Me</h1>
       <div className="contact-form">
-        <label htmlFor="name">Name</label>
-        <input id="name" type="text" />
-
-        <label htmlFor="email">Email</label>
-        <input id="email" type="email" />
-
-        <label htmlFor="message">Message</label>
-        <textarea id="message"></textarea>
-
-        <button type="submit">Send</button>
+        <a href="mailto:gokulsajeev10@example.com">
+            <button  type="submit">Email Me &#128512;</button>
+        </a>
       </div>
     </section>
   );

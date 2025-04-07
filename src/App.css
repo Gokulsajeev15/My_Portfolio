@@ -124,7 +124,113 @@
     max-width: 800px;
     margin: 0 auto;
   }
-  
+  /* Resume Button Styles */
+  .resume-button {
+    background-color: #64b6ac;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(100, 182, 172, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .resume-button p {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .resume-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(100, 182, 172, 0.4);
+    background-color: #4a8f87;
+  }
+
+  .resume-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(100, 182, 172, 0.2);
+  }
+
+  .resume-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+  }
+
+  .resume-button:hover::before {
+    left: 100%;
+  }
+
+  /* Resume Display Section */
+  .resume-display {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   /* Download Button Styles */
+  .download-button {
+    background-color: #64b6ac;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(58, 125, 118, 0.3);
+    display: inline-block;
+  }
+
+  .download-button:hover {
+    background-color: #4a8f87;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(58, 125, 118, 0.4);
+  }
+
+  .download-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(58, 125, 118, 0.2);
+  }
+
+  .resume-section h3 {
+    margin: 25px 0;
+    color: #555;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+  }
+
+
   /* ------------------ Projects ----------------------*/
   .projects {
     background-color: #f7f9f9;
@@ -216,45 +322,14 @@
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   }
-  
-  .contact-form label {
-    font-size: 1rem;
-    color: #555;
-    text-align: left;
-    font-weight: 500;
-    font-weight:normal;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 0px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    background-color: #fff;
-    transition: border 0.3s ease;
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    outline: none;
-    border-color: #64b6ac;
-    box-shadow: 0 0 0 2px rgba(100, 182, 172, 0.2);
-  }
-  
-  .contact-form textarea {
-    resize: none;
-    height: 150px;
-  }
-  
+
   .contact-form button {
     padding: 14px 26px;
     background-color: #64b6ac;
     color: white;
     border: none;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -266,7 +341,7 @@
     background-color: #4a8f87;
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(100, 182, 172, 0.4);
-  }
+
   
   /* ------------------ Responsive Design ----------------------*/
   @media (max-width: 1024px) {
@@ -346,16 +421,4 @@
       padding: 20px;
     }
   }
-  /* @media (max-width: 768px) {
-    .social-icon, .social-icon-l {
-      width: 35px; 
-      height: 35px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .social-icon, .social-icon-l {
-      width: 30px;  
-      height: 30px;
-    }
-  } */
