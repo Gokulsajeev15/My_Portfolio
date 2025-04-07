@@ -124,6 +124,7 @@
     max-width: 800px;
     margin: 0 auto;
   }
+  
   /* Resume Button Styles */
   .resume-button {
     background-color: #64b6ac;
@@ -221,15 +222,6 @@
     transform: translateY(-1px);
     box-shadow: 0 3px 6px rgba(58, 125, 118, 0.2);
   }
-
-  .resume-section h3 {
-    margin: 25px 0;
-    color: #555;
-    font-weight: 400;
-    position: relative;
-    display: inline-block;
-  }
-
 
   /* ------------------ Projects ----------------------*/
   .projects {
