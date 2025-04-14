@@ -24,11 +24,6 @@ function Projects() {
       link:'https://github.com/Gokulsajeev15/Automated-Survey_scheduler'
       
     },
-    {
-      title: 'Task Manager',
-      description: 'A minimalist yet powerful task management application with features like drag-and-drop organization, reminders, and progress tracking.',
-      image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=600&h=400&fit=crop',
-    },
 
   ];
 

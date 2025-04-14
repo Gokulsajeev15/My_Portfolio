@@ -2,7 +2,6 @@ import { useState } from "react"
 
 function About() {
     const [showResume,setShowResume]=useState(false)
-
     return (
       <>
         <section id="about" className="about">
