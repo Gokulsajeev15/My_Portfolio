@@ -103,26 +103,27 @@
   /* ------------------ About ----------------------*/
   .about {
     text-align: center;
-    padding: 250px 20px;
+    padding: 80px 20px;
     min-height: 90vh;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
   }
   
   .about h1 {
     color: #64b6ac;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
     position: relative;
     display: inline-block;
   }
   
   
   .about p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.8;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 15px auto;
+    padding: 0 15px;
   }
 
   /* Resume Button Styles */
@@ -264,7 +265,6 @@
     border-radius: 12px;
     overflow: hidden;
     width: 350px;
-    text-align: center;
     background-color: white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -288,12 +288,52 @@
     color: #333;
     margin: 15px 0;
     padding: 0 15px;
+    text-align: center;
   }
   
   .project-card p {
     color: #666;
     padding: 0 15px 20px;
     line-height: 1.5;
+    text-align: center;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 2px solid #c3e8bd;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .tech-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #c3e8bd, #64b6ac);
+    color: #2d3748;
+    padding: 8px 14px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(100, 182, 172, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+
+  .tech-badge:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .tech-badge img {
+    width: 18px;
+    height: 18px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
   }
   
   /* ------------------ Contact ----------------------*/

@@ -6,8 +6,14 @@ function About() {
       <>
         <section id="about" className="about">
             <h1>About Me</h1>
-            <p>I'm Gokul Sajeevan, currently pursuing my MSc in Computer Science at University College Dublin. I'm deeply passionate about Software Engineering and AI, actively enhancing my skills to become an impactful software engineer.</p>
-            <p>Technology excites me! I began with Python and Java, ventured into JavaScript, React, and Spring Boot, and now I'm diving deeper into Cloud Technologies, Kubernetes, and Generative AI. Whether it's building intuitive web applications, exploring backend systems, or experimenting with cutting-edge AI technologies, I'm always ready for the next challenge.</p>
+            <p>I'm a Student Doing My MSc Computer Science in UCD</p>
+        <p>👋 Hi, I'm Gokul Sajeev, a passionate software developer with a keen interest in building innovative solutions. Currently pursuing my MSc in Computer Science at University College Dublin, I have a strong foundation in software development and a growing expertise in cloud technologies.</p>
+        <p>💻 I have hands-on experience in developing full-stack applications, with a focus on creating efficient and scalable solutions. My projects include a finance assistant leveraging OpenAI's GPT, an eCommerce platform for agricultural products, and an automated survey scheduler using machine learning.</p>
+        <p>🌱 I am continuously learning and exploring new technologies, with a particular interest in cloud computing and AI. I thrive on challenges and enjoy collaborating with others to create impactful software solutions.</p>
+        <p>📫 Feel free to connect with me on GitHub or LinkedIn, or download my resume to learn more about my work and experiences.</p>
+        
+
+            <p></p>
               <div className="about-links">
                 <a href="https://github.com/Gokulsajeev15" target="_blank" rel="noopener noreferrer">
                     <img src="/My_Portfolio/assets/github-mark.png" alt="GitHub" className="social-icon" />
