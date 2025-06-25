@@ -19,7 +19,7 @@ function ProjectCard({ title, description, image, link, technologies }) {
       'SQLite': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg',
       'OpenAI': 'https://seeklogo.com/images/O/open-ai-logo-8B9BFEDC26-seeklogo.com.png'
     };
-    return logoMap[tech];
+    return logoMap[tech] ;
   };
 
   return (

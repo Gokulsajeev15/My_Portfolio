@@ -12,7 +12,6 @@ function About() {
         <p>🌱 I am continuously learning and exploring new technologies, with a particular interest in cloud computing and AI. I thrive on challenges and enjoy collaborating with others to create impactful software solutions.</p>
         <p>📫 Feel free to connect with me on GitHub or LinkedIn, or download my resume to learn more about my work and experiences.</p>
         
-
             <p></p>
               <div className="about-links">
                 <a href="https://github.com/Gokulsajeev15" target="_blank" rel="noopener noreferrer">
