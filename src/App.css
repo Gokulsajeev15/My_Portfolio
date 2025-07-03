@@ -69,6 +69,7 @@ body {
     overflow: hidden;
 }
 
+/* Simplified Nothing glow animation */
 .nothing-glow::before {
     content: '';
     position: absolute;
@@ -76,9 +77,11 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    animation: nothing-glow-rotate 8s linear infinite;
-    opacity: 0.5;
+    background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    animation: nothing-glow-rotate 12s linear infinite;
+    opacity: 0.3;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 @keyframes nothing-glow-rotate {
@@ -207,6 +210,7 @@ html {
     overflow: hidden;
 }
 
+/* Optimized star field animations */
 .hero::before {
     content: '';
     position: absolute;
@@ -216,14 +220,14 @@ html {
     height: 100%;
     background: 
         radial-gradient(2px 2px at 20px 30px, #eee, transparent),
-        radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
         radial-gradient(1px 1px at 90px 40px, #fff, transparent),
-        radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
         radial-gradient(2px 2px at 160px 30px, #fff, transparent);
     background-repeat: repeat;
     background-size: 200px 100px;
-    animation: stars 20s linear infinite;
-    opacity: 0.8;
+    animation: stars 30s linear infinite;
+    opacity: 0.6;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .hero::after {
@@ -235,12 +239,13 @@ html {
     height: 100%;
     background: 
         radial-gradient(1px 1px at 50px 60px, #fff, transparent),
-        radial-gradient(1px 1px at 120px 20px, rgba(255,255,255,0.7), transparent),
-        radial-gradient(2px 2px at 180px 90px, #fff, transparent);
+        radial-gradient(1px 1px at 120px 20px, rgba(255,255,255,0.7), transparent);
     background-repeat: repeat;
     background-size: 250px 150px;
-    animation: stars 30s linear infinite reverse;
-    opacity: 0.6;
+    animation: stars 45s linear infinite reverse;
+    opacity: 0.4;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .hero h1 {
@@ -375,6 +380,7 @@ html {
     overflow: hidden;
 }
 
+/* Optimized background animations with reduced complexity */
 .about::before {
     content: '';
     position: absolute;
@@ -383,15 +389,15 @@ html {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(1px 1px at 60px 80px, rgba(255,255,255,0.4), transparent),
-        radial-gradient(2px 2px at 120px 30px, rgba(255,255,255,0.3), transparent),
-        radial-gradient(1px 1px at 180px 70px, rgba(255,255,255,0.5), transparent),
-        radial-gradient(1px 1px at 240px 20px, rgba(255,255,255,0.3), transparent);
+        radial-gradient(1px 1px at 60px 80px, rgba(255,255,255,0.3), transparent),
+        radial-gradient(1px 1px at 180px 70px, rgba(255,255,255,0.4), transparent);
     background-repeat: repeat;
     background-size: 300px 150px;
-    animation: stars 35s linear infinite reverse;
-    opacity: 0.3;
+    animation: stars 50s linear infinite reverse;
+    opacity: 0.2;
     pointer-events: none;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .about::after {
@@ -516,7 +522,7 @@ html {
     position: relative;
 }
 
-/* Optimized tech flow waves */
+/* Optimized tech flow waves - reduced complexity */
 .tech-flow::before {
     content: '';
     position: absolute;
@@ -524,10 +530,11 @@ html {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(168, 230, 207, 0.1), transparent);
-    animation: flowWave 8s ease-in-out infinite;
+    background: linear-gradient(90deg, transparent, rgba(168, 230, 207, 0.08), transparent);
+    animation: flowWave 12s ease-in-out infinite;
     will-change: transform;
     transform: translateZ(0);
+    opacity: 0.6;
 }
 
 .tech-flow::after {
@@ -537,10 +544,11 @@ html {
     right: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg, transparent, rgba(136, 216, 192, 0.08), transparent);
-    animation: flowWaveReverse 10s ease-in-out infinite;
+    background: linear-gradient(270deg, transparent, rgba(136, 216, 192, 0.06), transparent);
+    animation: flowWaveReverse 15s ease-in-out infinite;
     will-change: transform;
     transform: translateZ(0);
+    opacity: 0.4;
 }
 
 .tech-item {
@@ -551,11 +559,11 @@ html {
     color: #a8e6cf;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     cursor: pointer;
     backdrop-filter: blur(15px);
-    animation: float 8s ease-in-out infinite;
+    animation: float 12s ease-in-out infinite;
     overflow: hidden;
     z-index: 1;
     display: flex;
@@ -565,6 +573,8 @@ html {
     font-family: 'DM Mono', 'JetBrains Mono', monospace;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .tech-item img {
@@ -579,6 +589,7 @@ html {
     z-index: 2;
 }
 
+/* Simplified tech item hover effects - remove complex ripple animation */
 .tech-item::before {
     content: '';
     position: absolute;
@@ -586,16 +597,18 @@ html {
     left: 50%;
     width: 0;
     height: 0;
-    background: radial-gradient(circle, rgba(168, 230, 207, 0.4) 0%, rgba(136, 216, 192, 0.2) 50%, transparent 100%);
+    background: rgba(168, 230, 207, 0.2);
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: -1;
+    opacity: 0;
 }
 
 .tech-item:hover::before {
-    width: 300px;
-    height: 300px;
+    width: 120px;
+    height: 120px;
+    opacity: 1;
 }
 
 .tech-item:nth-child(odd) {
@@ -615,19 +628,18 @@ html {
 }
 
 .tech-item:hover {
-    transform: translateY(-8px) scale(1.15) rotate(3deg);
+    transform: translateY(-6px) scale(1.08) translateZ(0);
     background: rgba(168, 230, 207, 0.25);
     box-shadow: 
-        0 15px 40px rgba(168, 230, 207, 0.4), 
-        0 0 30px rgba(168, 230, 207, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        0 12px 30px rgba(168, 230, 207, 0.3), 
+        0 0 20px rgba(168, 230, 207, 0.2);
     border-color: rgba(168, 230, 207, 0.6);
     color: #ffffff;
 }
 
 .tech-item:hover img {
-    transform: scale(1.2) rotate(-5deg);
-    filter: drop-shadow(0 0 10px rgba(168, 230, 207, 0.6)) brightness(1.2);
+    transform: scale(1.1) translateZ(0);
+    filter: drop-shadow(0 0 8px rgba(168, 230, 207, 0.5)) brightness(1.1);
 }
 
 @keyframes flowWave {
@@ -656,19 +668,16 @@ html {
 
 @keyframes float {
     0%, 100% {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) translateZ(0);
     }
-    20% {
-        transform: translateY(-12px) rotate(2deg);
+    25% {
+        transform: translateY(-8px) translateZ(0);
     }
-    40% {
-        transform: translateY(-20px) rotate(0deg);
+    50% {
+        transform: translateY(-12px) translateZ(0);
     }
-    60% {
-        transform: translateY(-8px) rotate(-1deg);
-    }
-    80% {
-        transform: translateY(-15px) rotate(1deg);
+    75% {
+        transform: translateY(-6px) translateZ(0);
     }
 }
 
@@ -800,6 +809,7 @@ html {
     overflow: hidden;
 }
 
+/* Optimized projects background with reduced complexity */
 .projects::before {
     content: '';
     position: absolute;
@@ -809,14 +819,14 @@ html {
     bottom: 0;
     background: 
         radial-gradient(1px 1px at 30px 40px, rgba(255,255,255,0.3), transparent),
-        radial-gradient(1px 1px at 80px 20px, rgba(255,255,255,0.5), transparent),
-        radial-gradient(2px 2px at 150px 60px, rgba(255,255,255,0.4), transparent),
-        radial-gradient(1px 1px at 200px 90px, rgba(255,255,255,0.3), transparent);
+        radial-gradient(1px 1px at 150px 60px, rgba(255,255,255,0.4), transparent);
     background-repeat: repeat;
     background-size: 250px 120px;
-    animation: stars 25s linear infinite;
-    opacity: 0.4;
+    animation: stars 40s linear infinite;
+    opacity: 0.3;
     pointer-events: none;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .projects::after {
@@ -869,6 +879,7 @@ html {
     margin-top: 60px;
 }
 
+/* Optimized project card transitions */
 .project-card {
     border-radius: 16px;
     overflow: hidden;
@@ -878,9 +889,11 @@ html {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
     text-decoration: none;
     position: relative;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .project-card::before {
@@ -900,8 +913,8 @@ html {
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(168, 230, 207, 0.2);
+    transform: translateY(-8px) translateZ(0);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4), 0 0 16px rgba(168, 230, 207, 0.2);
     border-color: rgba(168, 230, 207, 0.3);
     background: rgba(40, 40, 40, 0.8);
 }
@@ -1098,9 +1111,10 @@ html {
     opacity: 0.3;
 }
 
+/* Optimized border glow animation - less frequent updates */
 @keyframes borderGlow {
-    0% { opacity: 0.3; }
-    100% { opacity: 0.6; }
+    0% { opacity: 0.2; }
+    100% { opacity: 0.4; }
 }
 
 .contact-intro {
@@ -1121,6 +1135,7 @@ html {
     z-index: 1;
 }
 
+/* Simplified contact method animations */
 .contact-method {
     display: flex;
     align-items: center;
@@ -1129,11 +1144,13 @@ html {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     text-decoration: none;
     color: #fff;
     position: relative;
     overflow: hidden;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .contact-method::before {
@@ -1152,8 +1169,8 @@ html {
 }
 
 .contact-method:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(168, 230, 207, 0.2);
+    transform: translateY(-3px) translateZ(0);
+    box-shadow: 0 8px 24px rgba(168, 230, 207, 0.2);
     border-color: rgba(168, 230, 207, 0.4);
 }
 
@@ -1222,13 +1239,16 @@ html {
 }
 
 /* Shooting star effect for galaxy background */
+/* Optimized shooting star animation */
 .shooting-star {
     position: absolute;
     width: 2px;
     height: 2px;
     background: linear-gradient(45deg, #fff, transparent);
     border-radius: 50%;
-    animation: shooting 3s linear infinite;
+    animation: shooting 4s linear infinite;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .shooting-star:nth-child(1) {
@@ -1251,11 +1271,11 @@ html {
 
 @keyframes shooting {
     0% {
-        transform: rotate(45deg) translateX(0);
+        transform: rotate(45deg) translateX(0) translateZ(0);
         opacity: 1;
     }
     100% {
-        transform: rotate(45deg) translateX(300px);
+        transform: rotate(45deg) translateX(200px) translateZ(0);
         opacity: 0;
     }
 }
@@ -1396,25 +1416,37 @@ a, button, .project-card, .tech-badge {
     .about::before,
     .projects::before,
     .contact-section::before {
-        animation-duration: 40s;
-        opacity: 0.2;
+        animation-duration: 60s;
+        opacity: 0.15;
     }
     
-    /* Reduce tech item animations */
+    /* Disable tech item animations on mobile */
     .tech-item {
         animation: none;
         transition: transform 0.2s ease, background 0.2s ease;
     }
     
     .tech-item:hover {
-        transform: translateY(-4px) scale(1.02) translateZ(0);
+        transform: translateY(-2px) scale(1.02) translateZ(0);
     }
     
     /* Simplify flow waves */
     .tech-flow::before,
     .tech-flow::after {
-        animation-duration: 15s;
-        opacity: 0.5;
+        animation: none;
+        opacity: 0.3;
+    }
+    
+    /* Disable shooting stars on mobile */
+    .shooting-star {
+        display: none;
+    }
+    
+    /* Reduce backdrop blur on mobile for better performance */
+    .project-card,
+    .contact-form,
+    .about-card {
+        backdrop-filter: blur(5px);
     }
 }
 
@@ -1584,6 +1616,7 @@ a, button, .project-card, .tech-badge {
 }
 
 /* Cool additional effects for tech stack */
+/* Optimized tech stack container animation */
 .tech-flow-container::before {
     content: '';
     position: absolute;
@@ -1591,10 +1624,12 @@ a, button, .project-card, .tech-badge {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent, rgba(168, 230, 207, 0.1), transparent, rgba(136, 216, 192, 0.1), transparent);
-    animation: rotate 20s linear infinite;
-    opacity: 0.3;
+    background: conic-gradient(from 0deg, transparent, rgba(168, 230, 207, 0.05), transparent, rgba(136, 216, 192, 0.05), transparent);
+    animation: rotate 30s linear infinite;
+    opacity: 0.2;
     z-index: -1;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .tech-flow-container {
@@ -1610,32 +1645,45 @@ a, button, .project-card, .tech-badge {
     }
 }
 
+/* Simplified pulse animations */
 @keyframes pulse {
     0%, 100% {
         opacity: 0.8;
-        transform: scale(1);
+        transform: scale(1) translateZ(0);
     }
     50% {
         opacity: 1;
-        transform: scale(1.05);
+        transform: scale(1.02) translateZ(0);
     }
 }
 
-/* Random pulsing for different tech items */
+/* Random pulsing for different tech items - reduced frequency */
 .tech-item:nth-child(5n) {
-    animation: float 8s ease-in-out infinite, pulse 4s ease-in-out infinite;
+    animation: float 12s ease-in-out infinite, pulse 6s ease-in-out infinite;
 }
 
 .tech-item:nth-child(7n) {
-    animation: float 8s ease-in-out infinite, pulse 6s ease-in-out infinite;
+    animation: float 12s ease-in-out infinite, pulse 8s ease-in-out infinite;
 }
 
 /* Performance optimizations for better scrolling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enable hardware acceleration for smoother animations */
+.hero,
+.about,
+.projects,
+.contact-section,
 .project-card,
 .tech-item,
 .contact-method,
 .resume-button,
 .download-button {
+    transform: translateZ(0);
     will-change: auto;
 }
 
@@ -1669,4 +1717,42 @@ a, button, .project-card, .tech-badge {
     .contact-form {
         background: rgba(30, 30, 30, 0.9);
     }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .tech-item,
+    .shooting-star,
+    .hero-decoration {
+        animation: none !important;
+    }
+    
+    .tech-flow::before,
+    .tech-flow::after,
+    .nothing-glow::before,
+    .tech-flow-container::before {
+        animation: none !important;
+    }
+}
+
+/* GPU acceleration for better performance */
+.hero::before,
+.hero::after,
+.about::before,
+.projects::before,
+.contact-section::before,
+.tech-flow::before,
+.tech-flow::after {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
