@@ -188,7 +188,7 @@ function About() {
                                 <span>AI</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://rich.readthedocs.io/en/stable/_static/logo.png" alt="Rich" />
+                                <img src="https://cdn-icons-png.flaticon.com/512/2620/2620939.png" alt="Rich" />
                                 <span>Rich</span>
                             </div>
                             <div className="tech-item">
@@ -196,8 +196,12 @@ function About() {
                                 <span>Typer</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://brew.sh/assets/img/homebrew-256x256.png" alt="Homebrew" />
-                                <span>Homebrew</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="MCP" />
+                                <span>MCP</span>
+                            </div>
+                            <div className="tech-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3659/3659898.png" alt="Cross-Platform" />
+                                <span>Cross-Platform</span>
                             </div>
                         </div>
                     </div>
