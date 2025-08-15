@@ -148,10 +148,6 @@ function About() {
                                 <span>Gmail API</span>
                             </div>
                             <div className="tech-item">
-                                <img src="https://cdn.brandfetch.io/idfGjoDDfo/w/400/h/400/theme/dark/icon.jpeg" alt="Polygon.io" />
-                                <span>Polygon.io</span>
-                            </div>
-                            <div className="tech-item">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
                                 <span>JavaScript</span>
                             </div>
@@ -174,6 +170,34 @@ function About() {
                             <div className="tech-item">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="Machine Learning" />
                                 <span>Machine Learning</span>
+                            </div>
+                            <div className="tech-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
+                                <span>FastAPI</span>
+                            </div>
+                            <div className="tech-item">
+                                <img src="https://vitejs.dev/logo.svg" alt="Vite" />
+                                <span>Vite</span>
+                            </div>
+                            <div className="tech-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" />
+                                <span>Pandas</span>
+                            </div>
+                            <div className="tech-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/8637/8637099.png" alt="AI" />
+                                <span>AI</span>
+                            </div>
+                            <div className="tech-item">
+                                <img src="https://rich.readthedocs.io/en/stable/_static/logo.png" alt="Rich" />
+                                <span>Rich</span>
+                            </div>
+                            <div className="tech-item">
+                                <img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" alt="Typer" />
+                                <span>Typer</span>
+                            </div>
+                            <div className="tech-item">
+                                <img src="https://brew.sh/assets/img/homebrew-256x256.png" alt="Homebrew" />
+                                <span>Homebrew</span>
                             </div>
                         </div>
                     </div>

@@ -12,16 +12,31 @@ function ProjectCard({ title, description, image, link, technologies, cardRef })
     const logoMap = {
       'Python': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
       'OpenAI API': 'https://seeklogo.com/images/O/open-ai-logo-8B9BFEDC26-seeklogo.com.png',
-      'Polygon.io': 'https://cdn.brandfetch.io/idfGjoDDfo/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B',
       'Streamlit': 'https://streamlit.io/images/brand/streamlit-mark-color.png',
-      'Next.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+      'React': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
       'Spring Boot': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
       'Tailwind CSS': 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
       'JWT': 'https://jwt.io/img/pic_logo.svg',
       'MySQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
       'Gmail API': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg',
       'SQLite': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg',
-      'OpenAI': 'https://seeklogo.com/images/O/open-ai-logo-8B9BFEDC26-seeklogo.com.png'
+      'OpenAI': 'https://seeklogo.com/images/O/open-ai-logo-8B9BFEDC26-seeklogo.com.png',
+      'FastAPI': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
+      'Vite': 'https://vitejs.dev/logo.svg',
+      'YahooFinance': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yahoo/yahoo-original.svg',
+      'Pandas': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg',
+      'AI': 'https://cdn-icons-png.flaticon.com/512/8637/8637099.png',
+      'Caching': 'https://cdn-icons-png.flaticon.com/512/2103/2103633.png',
+      'OpenAI GPT-4o': 'https://seeklogo.com/images/O/open-ai-logo-8B9BFEDC26-seeklogo.com.png',
+      'Rich': 'https://rich.readthedocs.io/en/stable/_static/logo.png',
+      'Typer': 'https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg',
+      'MCP': 'https://cdn-icons-png.flaticon.com/512/4712/4712027.png',
+      'Cross-Platform': 'https://cdn-icons-png.flaticon.com/512/3659/3659898.png',
+      'Homebrew': 'https://brew.sh/assets/img/homebrew-256x256.png',
+      'SSH': 'https://cdn-icons-png.flaticon.com/512/2107/2107957.png',
+      'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+      'React.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      'CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
     };
     return logoMap[tech] ;
   };
@@ -121,20 +136,27 @@ function Projects() {
     };
 
     const projectData = [
+
         {
-            title: 'Finance Assistant',
-            description: "Built an intelligent financial assistant integrating OpenAI's GPT with Polygon.io to provide real-time financial insights. Implemented generalized functions for handling diverse finance-related queries and visualizations. Integrated advanced features like PDF-based ticker extraction, financial metric calculations, and data-driven investment recommendations.",
-            image: '/My_Portfolio/assets/Finance assistant.png',
-            link:'https://github.com/Gokulsajeev15/Finance-Assistant',
-            technologies: ['Python', 'OpenAI', 'Polygon.io']
+          title: 'Finance Assistant',
+          description: "Developed a comprehensive Finance Assistant full-stack application comprising a backend API and a React frontend. The backend API is built with FastAPI integrating real-time stock data from Yahoo Finance and extensive Fortune 500 company data, featuring AI-powered natural language query processing, advanced technical analysis, caching, and sector insights. The React frontend was built with Vite for a modern, fast, and responsive user interface allowing seamless interaction with backend services for company search, technical analysis, and AI queries.",
+          image: '/My_Portfolio/assets/Finance assistant.png',
+          link: 'https://github.com/Gokulsajeev15/Finance-Assistant',
+          technologies: ['Python', 'FastAPI', 'React', 'Vite', 'YahooFinance', 'Pandas', 'AI', 'Caching','Git']
         },
-        
+        {
+          title: 'AI-Powered Development Assistant with MCP Integration (UCD Project)',
+          description: "Developed a comprehensive AI-powered development assistant featuring a FastAPI backend with MCP (Model Context Protocol) integration and an intelligent CLI frontend. The backend API leverages OpenAI GPT-4o mini for natural language processing, cross-platform tool management (macOS, Windows, Linux), automated Git workflows with SSH key management, and real-time system configuration. The CLI frontend built with Rich and Typer provides an intuitive natural language interface for developers to install tools, manage development environments, generate code, and automate workflows through conversational commands.",
+          image: '/My_Portfolio/assets/cliagent_logo.png',
+          link: 'https://github.com/yashm777/DevForge.git',
+          technologies: ['Python', 'FastAPI', 'OpenAI GPT-4o', 'Rich', 'Typer', 'MCP', 'Git', 'Cross-Platform', 'SSH']
+        },
         {
             title: 'Agribridge',
             description: "Developed a full-stack eCommerce application bridging farmers and sellers for agricultural waste products. Designed responsive UI components using React and Tailwind CSS for enhanced user experience. Implemented backend features including authentication with JWT, product management, and robust API endpoints.",
             image: '/My_Portfolio/assets/Agribridge.png',
             link:'https://github.com/Gokulsajeev15/Agribridge',
-            technologies: ['Next.js', 'Spring Boot', 'Tailwind CSS', 'JWT', 'MySQL']
+            technologies: ['React.js', 'Spring Boot', 'CSS', 'JWT', 'MySQL']
         },
         {
             title: 'Automated Survey Scheduler',
@@ -143,6 +165,7 @@ function Projects() {
             link:'https://github.com/Gokulsajeev15/Automated-Survey_scheduler',
             technologies: ['Python', 'Streamlit', 'Gmail API', 'OpenAI', 'SQLite']
         }
+
     ];
 
     return (
