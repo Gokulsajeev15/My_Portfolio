@@ -138,10 +138,10 @@ function Projects() {
 
         {
           title: 'Finance Assistant',
-          description: "Developed a comprehensive Finance Assistant full-stack application comprising a backend API and a React frontend. The backend API is built with FastAPI integrating real-time stock data from Yahoo Finance and extensive Fortune 500 company data, featuring AI-powered natural language query processing, advanced technical analysis, caching, and sector insights. The React frontend was built with Vite for a modern, fast, and responsive user interface allowing seamless interaction with backend services for company search, technical analysis, and AI queries.",
+          description: "Built an AI-powered financial analysis application processing 100 major companies with real-time market data integration. Features dynamic company recognition through intelligent search algorithms, comprehensive technical analysis engine calculating 6 key indicators (RSI, moving averages, Bollinger Bands), and OpenAI GPT-4o mini integration for natural language financial queries. Developed with FastAPI backend architecture across 3 modular services and React frontend, unified through single-command deployment automation.",
           image: '/My_Portfolio/assets/Finance assistant.png',
           link: 'https://github.com/Gokulsajeev15/Finance-Assistant',
-          technologies: ['Python', 'FastAPI', 'React', 'Vite', 'YahooFinance', 'Pandas', 'AI', 'Caching','Git']
+          technologies: ['Python', 'FastAPI', 'React', 'Vite', 'OpenAI API', 'Yahoo Finance API', 'Pandas', 'Git']
         },
         {
           title: 'AI-Powered Development Assistant with MCP Integration (UCD Project)',
