@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import githubMark from '/assets/github-mark.png'
+import inbugLogo from '/assets/InBug-Black.png'
+import resume from '/assets/GokulSajeev-Resume.pdf'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -210,10 +213,10 @@ function About() {
             
             <div className="about-links">
                 <a href="https://github.com/Gokulsajeev15" target="_blank" rel="noopener noreferrer" ref={addToSocialLinksRefs}>
-                    <img src="/My_Portfolio/assets/github-mark.png" alt="GitHub" className="social-icon" />
+                    <img src={githubMark} alt="GitHub" className="social-icon" />
                 </a>
                 <a href="https://www.linkedin.com/in/gokulsajeev/" target="_blank" rel="noopener noreferrer" ref={addToSocialLinksRefs}>
-                    <img src="/My_Portfolio/assets/InBug-Black.png" alt="LinkedIn" className="social-icon-l" />
+                    <img src={inbugLogo} alt="LinkedIn" className="social-icon-l" />
                 </a>
             </div>
             
@@ -223,12 +226,12 @@ function About() {
             
             {showResume && (
                 <div className="resume-display">
-                    <iframe src="/My_Portfolio/assets/GokulSajeev-Resume.pdf" width="100%" height="500px" title="Resume" className="resume-iframe"></iframe>
+                    <iframe src={resume} width="100%" height="500px" title="Resume" className="resume-iframe"></iframe>
                 </div>
             )}
             
             <h3 ref={addToButtonsRefs}>Or</h3>
-            <a href="/My_Portfolio/assets/GokulSajeev-Resume.pdf" download ref={addToButtonsRefs}>
+            <a href={resume} download ref={addToButtonsRefs}>
                 <button className="download-button">Download</button>
             </a>
         </section>

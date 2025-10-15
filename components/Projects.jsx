@@ -2,6 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import financeAssistant from '/assets/Finance assistant.png'
+import cliAgentLogo from '/assets/cliagent_logo.png'
+import agribridge from '/assets/Agribridge.png'
+import automatedScheduler from '/assets/Automated_scheduler.png'
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Reusable ProjectCard Component
@@ -139,28 +144,28 @@ function Projects() {
         {
           title: 'Finance Assistant',
           description: "Built an AI-powered financial analysis application processing 100 major companies with real-time market data integration. Features dynamic company recognition through intelligent search algorithms, comprehensive technical analysis engine calculating 6 key indicators (RSI, moving averages, Bollinger Bands), and OpenAI GPT-4o mini integration for natural language financial queries. Developed with FastAPI backend architecture across 3 modular services and React frontend, unified through single-command deployment automation.",
-          image: '/My_Portfolio/assets/Finance assistant.png',
+          image: financeAssistant,
           link: 'https://github.com/Gokulsajeev15/Finance-Assistant',
           technologies: ['Python', 'FastAPI', 'React', 'Vite', 'OpenAI API', 'Yahoo Finance API', 'Pandas', 'Git']
         },
         {
           title: 'AI-Powered Development Assistant with MCP Integration (UCD Project)',
           description: "Developed a comprehensive AI-powered development assistant featuring a FastAPI backend with MCP (Model Context Protocol) integration and an intelligent CLI frontend. The backend API leverages OpenAI GPT-4o mini for natural language processing, cross-platform tool management (macOS, Windows, Linux), automated Git workflows with SSH key management, and real-time system configuration. The CLI frontend built with Rich and Typer provides an intuitive natural language interface for developers to install tools, manage development environments, generate code, and automate workflows through conversational commands.",
-          image: '/My_Portfolio/assets/cliagent_logo.png',
+          image: cliAgentLogo,
           link: 'https://github.com/yashm777/DevForge.git',
           technologies: ['Python', 'FastAPI', 'OpenAI GPT-4o', 'Rich', 'Typer', 'MCP', 'Git', 'Cross-Platform', 'SSH']
         },
         {
             title: 'Agribridge',
             description: "Developed a full-stack eCommerce application bridging farmers and sellers for agricultural waste products. Designed responsive UI components using React and Tailwind CSS for enhanced user experience. Implemented backend features including authentication with JWT, product management, and robust API endpoints.",
-            image: '/My_Portfolio/assets/Agribridge.png',
+            image: agribridge,
             link:'https://github.com/Gokulsajeev15/Agribridge',
             technologies: ['React.js', 'Spring Boot', 'CSS', 'JWT', 'MySQL']
         },
         {
             title: 'Automated Survey Scheduler',
             description: 'Developed a system to automatically schedule and send surveys based on user availability and preferences. Incorporated machine learning algorithms and GPT for personalized and engaging survey messages. Enhanced engagement rates and provided comprehensive survey result insights.',
-            image: '/My_Portfolio/assets/Automated_scheduler.png',
+            image: automatedScheduler,
             link:'https://github.com/Gokulsajeev15/Automated-Survey_scheduler',
             technologies: ['Python', 'Streamlit', 'Gmail API', 'OpenAI', 'SQLite']
         }
