@@ -1,14 +1,12 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import githubMark from '/assets/github-mark.png'
 import inbugLogo from '/assets/InBug-Black.png'
-import resume from '/assets/GokulSajeev-Resume.pdf'
 
 gsap.registerPlugin(ScrollTrigger);
 
 function About() {
-    const [showResume, setShowResume] = useState(false);
     const aboutRef = useRef(null);
     const titleRef = useRef(null);
     const paragraphsRef = useRef([]);
@@ -184,20 +182,7 @@ function About() {
                 </a>
             </div>
             
-            <button className="resume-button" onClick={() => { setShowResume(!showResume) }} ref={addToButtonsRefs}>
-                <p>{showResume ? 'Hide Resume' : 'View My Resume'}</p>
-            </button>
-            
-            {showResume && (
-                <div className="resume-display">
-                    <iframe src={resume} width="100%" height="500px" title="Resume" className="resume-iframe"></iframe>
-                </div>
-            )}
-            
-            <h3 ref={addToButtonsRefs}>Or</h3>
-            <a href={resume} download ref={addToButtonsRefs}>
-                <button className="download-button">Download</button>
-            </a>
+
         </section>
     );
 }
